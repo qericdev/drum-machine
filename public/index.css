@@ -1,0 +1,174 @@
+body {
+    background-color: #3D348B;
+    margin: 0;
+    padding: 0;
+}
+
+#app-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drum-machine {
+    width: 550px;
+    height: 250px;
+    background-color: #BEB7A4;
+    border-radius: 7px;
+    border: 6px solid #E6AF2E;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.drumpad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.drumpad > div {
+    width: 90px;
+    height: 60px;
+    background-color: #3D348B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #E0E2DB;
+    border-radius: 10px;
+    box-shadow: 2px 2px #191716;
+    cursor: pointer;
+    
+}
+
+.drumpad > div:active {
+    background-color: #E6AF2E;
+    box-shadow: 0.5px 0.5px #191716;
+}
+
+#settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.power {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.power-base { 
+    width: 60px;
+    height: 20px;
+    background-color: #191716;
+    margin-top: -10px;
+    
+}
+
+.power-switch {
+    width: 25px;
+    height: 13px;
+    background-color: #3D348B;
+    margin-top: -16.5px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    background-color:#3D348B;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.text-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E0E2DB;
+
+}
+
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 200px;
+    height:15px;
+  
+}
+
+.volumeSwitch {
+    display: block;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.bank {
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.bank-base { 
+    width: 60px;
+    height: 20px;
+    background-color: #191716;
+    margin-top: -10px;
+}
+
+.bank-switch {
+    width: 25px;
+    height: 13px;
+    background-color: #3D348B;
+    margin-top: -16.5px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 570px) {
+    #drum-machine {
+        width: 500px;
+        height: 450px;
+        background-color: #BEB7A4;
+        border-radius: 7px;
+        border: 6px solid #E6AF2E;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+}
